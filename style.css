@@ -1,0 +1,1239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(247, 240, 240);
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 8px black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-left: 18px;
+    cursor: pointer;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.header h1:hover {
+    color: rgb(243, 88, 61);
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.header li {
+    padding: 0 15px;
+    position: relative;
+}
+
+.header li a {
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header li a.active {
+    color: rgb(243, 88, 61);
+}
+
+.header li a.active::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: rgb(243, 88, 61);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#menu {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu2 {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu:hover {
+    color: rgb(243, 88, 61);
+}
+
+#menu2:hover {
+    color: rgb(243, 88, 61);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/hero4.png");
+    background-size: cover;
+    background-position: top 25% right 0%;
+}
+
+.store {
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.store h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(182, 76, 159);
+}
+
+.store h1 {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: rgb(247, 47, 20);
+}
+
+.store h2 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(48, 71, 48);
+    line-height: 38px;
+}
+
+.store p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 18px;
+    color: rgb(80, 52, 80);
+}
+
+.store .btn {
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: rgb(106, 122, 197);
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.store .btn:hover {
+    background-color: rgb(226, 78, 78);
+    color: white;
+}
+
+.products {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 83px;
+}
+
+.card {
+    width: 180px;
+    height: 195px;
+    border: 1px solid rgb(151, 145, 145);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 8px black;
+}
+
+.card img {
+    padding: 0;
+}
+
+.card button {
+    width: 100%;
+    padding: 7px;
+    margin-top: 17px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    border: transparent;
+    background-color: rgb(211, 167, 167);
+    color: black;
+    cursor: pointer;
+}
+
+.card:nth-child(2) button {
+    background-color: rgb(138, 230, 101);
+    color: black;
+}
+
+.card:nth-child(3) button {
+    background-color: rgb(153, 142, 202);
+    color: black;
+}
+
+.card:nth-child(4) button {
+    background-color: rgb(199, 117, 185);
+    color: black;
+}
+
+.card:nth-child(5) button {
+    background-color: rgb(131, 169, 190);
+    color: black;
+}
+
+.card:nth-child(6) button {
+    background-color: rgb(207, 231, 198);
+    color: black;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.head h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head p {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shopStore {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 83px;
+    justify-content: space-evenly;
+}
+
+.items {
+    width: 230px;
+    border: 1px solid rgb(92, 87, 87);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+.items:hover {
+    box-shadow: 3px 3px 8px black;
+}
+
+.items img {
+    width: 200px;
+    margin: 10px 12px;
+    border-radius: 10px;
+}
+
+.text {
+    margin: 10px;
+}
+
+.text p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text h4 {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.text i {
+    color: yellow;
+}
+
+.text h5 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner {
+    margin-top: 30px;
+    width: 100%;
+    height: 40vh;
+    background-image: url("Images/banner/b2.jpg");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner h5 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 17px;
+    font-size: 30px;
+}
+
+.banner span {
+    color: rgb(30, 255, 0);
+}
+
+.banner button {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: rgb(211, 123, 196);
+    color: white;
+}
+
+.bannerPhoto {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 83px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.bannerLeft {
+    background-image: url("Images/banner/b17.jpg");
+    background-size: cover;
+    width: 48%;
+    height: 48vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+}
+
+.bannerRight {
+    background-image: url("Images/banner/b10.jpg");
+    background-size: cover;
+    width: 48%;
+    height: 48vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+}
+
+.bannerPhoto h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bannerPhoto h2 {
+    padding: 6px 0;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bannerPhoto h5 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.bannerPhoto button {
+    margin: 30px 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.bannerimg {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 83px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bannerimg .left {
+    width: 32%;
+    height: 32vh;
+    background-image: url(/Images/banner/b7.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.bannerimg .center {
+    width: 32%;
+    height: 32vh;
+    background-image: url(/Images/banner/b4.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.bannerimg .right {
+    width: 32%;
+    height: 32vh;
+    background-image: url(/Images/banner/b18.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.bannerimg h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bannerimg h5 {
+    margin-top: 7px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+.bannerimg h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchContainer {
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    background-image: url("Images/banner/b2.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.leftBox h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leftBox h4 {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leftBox span {
+    color: yellow;
+}
+
+.rightBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.rightBox input {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+}
+
+.rightBox button {
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+    border: none;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 83px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box1 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 h5 {
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 h4 {
+    margin: 8px 0;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 span {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 p {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box1 i {
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.box1:nth-child(1) i {
+    margin-left: 0;
+}
+
+.box1 {
+    margin-bottom: 33px;
+}
+
+.box2 {
+    margin-bottom: 33px;
+}
+
+.box3 {
+    margin-bottom: 33px;
+}
+
+.box4 {
+    margin-bottom: 33px;
+}
+
+.box2 .box3 .box4,
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box2 .box3 .box4,
+h3 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box2 .box3 .box4,
+h4 {
+    margin: 8px 0;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box4 img {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.box4 span img {
+    border: none;
+    margin-top: 10px;
+}
+
+.copyright {
+    width: 100%;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+}
+
+@media (max-width:799px) {
+    .header ul {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(247, 240, 240);
+        color: black;
+        box-shadow: 0 0 8px black;
+        margin-right: 0;
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .header ul.active {
+        right: 0px;
+    }
+
+    .header li {
+        margin: 15px 0;
+    }
+
+    #menu {
+        display: block;
+        margin-right: 40px;
+    }
+
+    #menu2 {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .container {
+        background-image: url("Images/hero4.png");
+        background-size: cover;
+        background-position: top 25% right 20%;
+        height: 80vh;
+    }
+
+    .products {
+        margin-top: 35px;
+    }
+
+    .shopStore {
+        margin-top: 30px;
+    }
+
+    .store {
+        width: 299px;
+    }
+
+    .store h1 {
+        font-size: 38px;
+    }
+
+    .store p {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 40vh;
+        margin-top: 30px;
+    }
+
+    .bannerPhoto {
+        margin-top: 30px;
+    }
+
+    .bannerPhoto h2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .bannerPhoto h5 {
+        font-size: 9px;
+    }
+
+    .bannerPhoto button {
+        padding: 4px 7px;
+        margin: 17px 0;
+    }
+
+    .bannerLeft {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .bannerRight {
+        width: 100%;
+        height: 30vh;
+        margin-top: 20px;
+    }
+
+    .bannerimg h2 {
+        font-size: 20px;
+    }
+
+    .bannerimg h3 {
+        font-size: 16px;
+    }
+
+    .bannerimg h5 {
+        font-size: 14px;
+    }
+
+    .bannerimg .left {
+        height: 12vh;
+    }
+
+    .bannerimg .center {
+        height: 12vh;
+    }
+
+    .bannerimg .right {
+        height: 12vh;
+    }
+
+    .searchContainer {
+        height: 22vh;
+    }
+
+    .leftBox h1 {
+        font-size: 25px;
+    }
+
+    .leftBox h4 {
+        font-size: 13px;
+    }
+
+    .rightBox input {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .rightBox button {
+        padding: 8px 8px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .header ul {
+        width: 200px;
+    }
+
+    .container {
+        background-position: 65%;
+        height: 60vh;
+    }
+
+    .store {
+        position: absolute;
+        top: 32%;
+    }
+
+    .store h1 {
+        font-size: 32px;
+    }
+
+    .store h2 {
+        font-size: 35px;
+    }
+
+    .store p {
+        font-size: 14px;
+        margin-top: 13px;
+    }
+
+    .store .btn {
+        width: 80%;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .products {
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 160px;
+        height: 180px;
+    }
+
+    .card button {
+        font-size: 14px;
+    }
+
+    .card img {
+        width: 122px;
+    }
+
+    .head h1 {
+        font-size: 40px;
+    }
+
+    .head p {
+        font-size: 14px;
+    }
+
+    .shopStore {
+        padding: 0px 52px;
+    }
+
+    .banner h1 {
+        font-size: 14px;
+    }
+
+    .banner button {
+        font-size: 19px;
+        padding: 7px 12px;
+    }
+
+    .banner {
+        height: 30vh;
+    }
+
+    .bannerPhoto {
+        padding: 0px 30px;
+    }
+
+    .bannerLeft {
+        width: 100%;
+    }
+
+    .bannerRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bannerPhoto button {
+        font-size: 15px;
+    }
+
+    .bannerimg {
+        padding: 0px 30px;
+    }
+
+    .bannerimg .left {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .bannerimg .center {
+        width: 100%;
+        height: 20vh;
+        margin: 20px 0;
+    }
+
+    .bannerimg .right {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .text h4 {
+        font-size: 13px;
+    }
+
+    .leftBox h1 {
+        font-size: 20px;
+    }
+
+    .leftBox h4 {
+        font-size: 10px;
+        padding-top: 3px;
+    }
+
+    .rightBox input {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .searchContainer {
+        height: 17vh;
+    }
+
+    .footer {
+        padding: 0px 40px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+}
+
+.shopHead {
+    width: 100%;
+    height: 40vh;
+    background-image: url('Images/banner/b1.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shopHead h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shopHead p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons .btns {
+    background-color: green;
+    color: white;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 8px;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media (max-width:799px) {
+    .shopHead {
+        height: 29vh;
+    }
+}
+
+@media (max-width:480px) {
+    .shopHead {
+        height: 24vh;
+    }
+
+    .shopHead p {
+        font-size: 15px;
+    }
+}
+
+.sproduct {
+    margin: 50px 83px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mainImg {
+    width: 45%;
+}
+
+.smallimg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallimgCol {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.imgInfo {
+    /* width: 50%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgInfo h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.imgInfo h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.imgInfo h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.imgInfo select {
+    display: block;
+    padding: 8px 15px;
+    font-size: 17px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+
+.imgInfo input {
+    width: 65px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    display: block;
+    outline: none;
+}
+
+.imgInfo button {
+    padding: 8px 13px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(18, 107, 18);
+    color: white;
+    border: 1px solid rgb(51, 49, 49);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.imgInfo h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.imgInfo p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    width: 500px;
+}
+
+@media (max-width:799px) {
+    .mainImg {
+        width: 100%;
+    }
+
+    .imgInfo {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .imgInfo p {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .sproduct {
+        margin: 35px 30px;
+    }
+
+}
+
+.blogHead {
+    width: 100%;
+    height: 40vh;
+    background-image: url('Images/banner/b19.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blogHead h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blogHead p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blog {
+    padding: 50px 100px 0 100px;
+}
+
+.blog .blogBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.blog .blogBox:nth-child(4) {
+    padding-bottom: 0;
+}
+
+.blog .blogImg {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog .blogInfo {
+    width: 50%;
+}
+
+.blog .blogInfo h3 {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.blog .blogInfo h3:hover {
+    color: rgb(243, 88, 61);
+}
+
+.blog .blogInfo h4 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.blog .blogInfo p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+@media (max-width:480px) {
+    .blogHead p {
+        font-size: 17px;
+    }
+
+    .blog {
+        padding: 50px 20px 0 20px;
+    }
+
+    .blog .blogBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    .blog .blogImg {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .blog .blogInfo {
+        width: 100%;
+    }
+
+    .blog .blogInfo h4 {
+        font-size: 17px;
+    }
+
+}
+
+.sorry {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 40vh;
+}
+
+@media (max-width:480px) {
+
+    .sorry {
+        font-size: 23px;
+    }
+}
